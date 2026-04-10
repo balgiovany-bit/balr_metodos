@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $edad = intval($_POST["edad"]);
 
     if (empty($nombre) || empty($apellido) || $edad <= 0) {
-        echo "<p>Error: todos los campos son obligartorios.</p>";
+        echo "<p>DEBES DE LLENAR TODOS LOS CAMPOS</p>";
     exit;}
 
 
@@ -22,6 +22,6 @@ echo "<p>Edad: " . $edad . " al reves es: " . $edadinvertida .  "</p>";
 echo "<p>Nombre en mayuscula: " . $nombremayuscula . "</p>";
 
 } else {
-    echo "acceso no permitido.";
+    echo "<p>Por favor, envía el formulario para ver los resultados.</p>";
 }
 ?>
